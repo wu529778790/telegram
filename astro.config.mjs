@@ -24,7 +24,9 @@ const providers = {
   edgeone: edgeone(),
 }
 
-const adapterProvider = process.env.SERVER_ADAPTER || provider
+const adapterProvider = (process.env.HOME === '/tmp/home' && process.env.PWD?.startsWith('/tmp/repo'))
+  ? 'edgeone'
+  : process.env.SERVER_ADAPTER || provider
 
 // https://astro.build/config
 export default defineConfig({
