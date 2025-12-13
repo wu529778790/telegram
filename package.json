@@ -32,6 +32,7 @@
     "@astrojs/netlify": "^6.6.0",
     "@astrojs/node": "^9.5.0",
     "@astrojs/vercel": "^9.0.0",
+    "@edgeone/astro": "^1.0.5",
     "@types/prismjs": "^1.26.5",
     "astro": "^5.15.7",
     "astro-eslint-parser": "^1.2.2",

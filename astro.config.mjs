@@ -3,6 +3,7 @@ import cloudflare from '@astrojs/cloudflare'
 import netlify from '@astrojs/netlify'
 import node from '@astrojs/node'
 import vercel from '@astrojs/vercel'
+import edgeone from '@edgeone/astro'
 import sentry from '@sentry/astro'
 import { defineConfig } from 'astro/config'
 import { provider } from 'std-env'
@@ -20,6 +21,7 @@ const providers = {
   node: node({
     mode: 'standalone',
   }),
+  edgeone: edgeone(),
 }
 
 const adapterProvider = process.env.SERVER_ADAPTER || provider
