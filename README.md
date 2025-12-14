@@ -110,6 +110,9 @@ HEADER_INJECT=HEADER_INJECT
 NO_FOLLOW=false
 NO_INDEX=false
 
+## Hide Telegram channel description
+HIDE_DESCRIPTION=false
+
 ## Sentry configuration options, collect server-side errors
 SENTRY_AUTH_TOKEN=SENTRY_AUTH_TOKEN
 SENTRY_DSN=SENTRY_DSN
