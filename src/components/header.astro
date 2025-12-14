@@ -103,7 +103,7 @@ const hideDescription = getEnv(import.meta.env, Astro, 'HIDE_DESCRIPTION')
 </div>
 
 {
-  !hideDescription && channel?.descriptionHTML && channel?.descriptionHTML.length > 0 && (
+  hideDescription !== 'true' && channel?.descriptionHTML && channel?.descriptionHTML.length > 0 && (
     <div class="text-box" id="site-intro" set:html={channel?.descriptionHTML} />
   )
 }
