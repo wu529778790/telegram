@@ -24,7 +24,7 @@ const providers = {
   edgeone: edgeone(),
 }
 
-const adapterProvider = (process.env.HOME === '/tmp/home' && process.env.PWD?.startsWith('/tmp/repo'))
+const adapterProvider = (process.env.HOME === '/dev/shm/home' && process.env.TMPDIR === '/dev/shm/tmp')
   ? 'edgeone'
   : process.env.SERVER_ADAPTER || provider
 
